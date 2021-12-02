@@ -86,12 +86,12 @@ h1 {
    left: 20%;
    top: 20%;
    z-index: -1;
-   /* background-size: ; */
+   text-align: center;
    background-repeat: no-repeat;
    border-radius: 2px;
    width: 30%;
    height: 600px;
-   box-shadow: -5px 10px darkgrey;
+   box-shadow: 10px -10px 10px lightgrey;
 }
 .web-links {
    width: 100%;
@@ -100,6 +100,21 @@ h1 {
 }
 .web-links img {
    width: 10%;
+}
+.left-content img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 45%;
+   border-radius: 50%;
+   padding: 5px;
+}
+.tech-icons img {
+   width: 75%;
+   border-radius: 0;
+}
+.tech-icons h5 {
+   font-size: 18px;
 }
 
 .right-box {
@@ -111,6 +126,6 @@ h1 {
    border-radius: 2px;
    width: 40%;
    height: 720px;
-   padding: 10px;
-   margin-left: 10px;
+   padding: 0 10px 0 10px;
+   margin-left: 5%;
 }
