@@ -75,8 +75,6 @@ h1 {
    left: 0px;
    top: 15%;
    z-index: -1;
-   background-size: 100%;
-   background-repeat: no-repeat;
    border-radius: 2px;
    width: 40%;
    height: 720px;
@@ -102,4 +100,17 @@ h1 {
 }
 .web-links img {
    width: 10%;
+}
+
+.right-box {
+   overflow: hidden;
+   position: absolute;
+   left: 50%;
+   top: 15%;
+   z-index: -1;
+   border-radius: 2px;
+   width: 40%;
+   height: 720px;
+   padding: 10px;
+   margin-left: 10px;
 }
