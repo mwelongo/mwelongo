@@ -70,7 +70,7 @@ h1 {
 /* Main Body - Box Containers */
 .large-box {
    overflow: hidden;
-   background-color: red;
+   background-color: lightgrey;
    position: absolute;
    left: 0px;
    top: 15%;
@@ -79,7 +79,7 @@ h1 {
    background-repeat: no-repeat;
    border-radius: 2px;
    width: 40%;
-   height: 750px;
+   height: 720px;
 }
 .small-box {
    overflow: hidden;
@@ -92,8 +92,8 @@ h1 {
    background-repeat: no-repeat;
    border-radius: 2px;
    width: 30%;
-   height: 550px;
-   box-shadow: -10px 10px lightgrey;
+   height: 600px;
+   box-shadow: -5px 10px darkgrey;
 }
 .web-links {
    width: 100%;
