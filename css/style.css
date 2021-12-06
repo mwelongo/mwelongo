@@ -75,7 +75,7 @@ h1 {
    left: 0px;
    top: 15%;
    z-index: -1;
-   border-radius: 2px;
+   border-radius: 10px;
    width: 40%;
    height: 720px;
 }
@@ -88,7 +88,7 @@ h1 {
    z-index: -1;
    text-align: center;
    background-repeat: no-repeat;
-   border-radius: 2px;
+   border-radius: 10px;
    width: 30%;
    height: 600px;
    box-shadow: 10px -10px 10px lightgrey;
@@ -131,4 +131,23 @@ h1 {
    height: 720px;
    padding: 0 10px 0 10px;
    margin-left: 5%;
+}
+
+/* Project  */
+.project-wrap {
+   width: 60%;
+   margin: auto;
+   display: flex;
+   margin-bottom: 1em;
+   background-color: grey;
+   border-radius: 10px;
+}
+.project-content, .project-img {
+   width: 50%;
+   padding: 10px;
+}
+
+.project-img img {
+   width: 95%;
+   height: 100%;
 }
