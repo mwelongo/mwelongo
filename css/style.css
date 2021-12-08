@@ -1,7 +1,8 @@
 /* Body and Headings */
 body {
    font-family: Arial, sans-serif;
-   background-color: #e8e8e4;
+   margin: 0;
+   margin-bottom: 100px;
 }
 
 h1, h2 {
@@ -10,7 +11,6 @@ h1, h2 {
 
 /* Header and Footer */
 header, .header {
-   /* position: absolute; */
    width: 100%;
    margin: auto;
    margin-bottom: 10px;
@@ -37,17 +37,18 @@ header ul {
    padding: 10px;
    text-align: right;
 }
-footer {
+footer, .footer {
    position: fixed;
+   left: 0;
    bottom: 0;
    width: 100%;
-   height: 75px;
+   height: 80px;
    background-color: lightgrey;
    display: flex;
    border: none;
    border-radius: 5px;
 }
-footer img {
+footer img, .footer img {
    width: 12%;
    padding: 5px;
    /* float: left; */
@@ -63,10 +64,6 @@ header li, footer li {
 h1 {
    color: darkblue;
 }
-.github-button {
-   /* width: 50px;
-   height: 150px; */
-}
 
 /* INDEX PAGE */
 .large-box {
@@ -74,7 +71,7 @@ h1 {
    background-color: lightgrey;
    position: absolute;
    left: 0px;
-   top: 15%;
+   top: 12%;
    z-index: -1;
    border-radius: 10px;
    width: 40%;
@@ -132,10 +129,14 @@ h1 {
    padding: 0 10px 0 10px;
    margin-left: 5%;
 }
+.project-wrap, .experience-wrap, .education-wrap, .impact-wrap, .about-me-wrap {
+   box-shadow: 10px -10px 10px lightgrey;
+}
 
-/* PROJECT PAGE*/
+/* PROJECTS PAGE*/
 .project-wrap {
    width: 50%;
+   height: 35%;
    margin: auto;
    display: flex;
    margin-bottom: 1em;
@@ -146,35 +147,13 @@ h1 {
    width: 50%;
    padding: 10px;
 }
-.project-img img, .impact-wrap img {
-   width: 95%;
-   height: 100%;
-}
-.indented-text {
-   /* text-indent: 12px; */
-   margin-left: 20px;
-}
-
-/* Bio Page */
-.about-me-wrap {
-   width: 50%;
-   margin: auto;
-   display: block;
-   margin-bottom: 1em;
+.project-img img {
+   width: 90%;
+   height: 98%;
    padding: .2em;
-   border: 1.5px solid lightgrey;
-   border-radius: 10px;
 }
-.about-me-text {
-   background-color: grey;
-   border-radius: 10px;
-   text-align: justify;
-   padding: 1.2em;
-}
-.about-me-wrap img {
-   width: 98%;
-   margin: 1.2em 0 1.2em 0
-   /* height: 100%; */
+.project-img {
+   /* border: 1px solid red; */
 }
 .project-btn {
    display: block;
@@ -188,6 +167,34 @@ h1 {
 .project-content img {
    width: 12%;
 }
+.indented-text {
+   /* text-indent: 12px; */
+   margin-left: 20px;
+}
+
+/* BIO/ABOUT ME PAGE */
+.about-me-wrap {
+   width: 60%;
+   margin: auto;
+   display: flex;
+   margin-bottom: 1em;
+   padding: .2em;
+   border: 1.5px solid lightgrey;
+   border-radius: 10px;
+}
+.about-me-text {
+   background-color: grey;
+   border-radius: 10px;
+   text-align: center;
+   padding: 1.2em;
+}
+.about-me-wrap img {
+   width: 45%;
+   height: 80%;
+   margin: 1.2em 0 1.2em 0;
+   padding: 5em 0 5em 0;
+   /* height: 100%; */
+}
 
 /* RESUME PAGE  */
 .resume-header {
@@ -197,7 +204,6 @@ h1 {
    width: 50%;
    margin: auto;
    text-align: center;
-   border: 2px solid red;
 }
 .resume-header button {
    height: 20px;
@@ -214,13 +220,18 @@ h1 {
 }
 
 /* SOCIAL IMPACT PAGE */
+.impact-header {
+   width: 60%;
+   margin: auto;
+   text-align: center;
+}
 .impact-wrap {
    width: 60%;
    height: 400px;
    margin: auto;
    display: flex;
    margin-bottom: 1em;
-   padding: 5px;
+   /* padding: 5px; */
    background-color: grey;
    border-radius: 10px;
    text-align: center;
@@ -237,14 +248,15 @@ h1 {
 }
 .impact-text {
    width: 40%;
-   border: 1px solid red;
+   padding: 1em;
 }
 .impact-img {
    width: 60%;
    margin: 5px;
    /* height: 100%; */
-   border: 1px solid red;
 }
 .impact-img img {
-
+   width: 98%;
+   height: 98%;
+   padding: .1em 0 .1em .5em;
 }
