@@ -129,8 +129,12 @@ h1 {
    padding: 0 10px 0 10px;
    margin-left: 5%;
 }
-.project-wrap, .experience-wrap, .education-wrap, .impact-wrap, .about-me-wrap {
-   box-shadow: 10px -10px 10px lightgrey;
+.project-wrap,
+.experience-wrap,
+.education-wrap,
+.impact-wrap,
+.about-me-wrap {
+   box-shadow: 10px 10px 10px lightgrey;
 }
 
 /* PROJECTS PAGE*/
@@ -143,7 +147,8 @@ h1 {
    background-color: grey;
    border-radius: 10px;
 }
-.project-content, .project-img {
+.project-content,
+.project-img {
    width: 50%;
    padding: 10px;
 }
@@ -175,12 +180,12 @@ h1 {
 /* BIO/ABOUT ME PAGE */
 .about-me-wrap {
    width: 60%;
+   height: 450px;
    margin: auto;
    display: flex;
    margin-bottom: 1em;
-   padding: .2em;
-   border: 1.5px solid lightgrey;
    border-radius: 10px;
+   text-align: center;
 }
 .about-me-text {
    background-color: grey;
@@ -189,10 +194,12 @@ h1 {
    padding: 1.2em;
 }
 .about-me-wrap img {
-   width: 45%;
-   height: 80%;
-   margin: 1.2em 0 1.2em 0;
-   padding: 5em 0 5em 0;
+   width: 50%;
+   /* height: 80%; */
+   margin: auto;
+   display: block;
+   /* margin: 3em 0 2em 0; */
+   /* padding: 5em 0 5em 0; */
    /* height: 100%; */
 }
 
@@ -209,7 +216,8 @@ h1 {
    height: 20px;
 }
 
-.experience-wrap, .education-wrap {
+.experience-wrap,
+.education-wrap {
    width: 50%;
    margin: auto;
    display: block;
@@ -232,7 +240,7 @@ h1 {
    display: flex;
    margin-bottom: 1em;
    /* padding: 5px; */
-   background-color: grey;
+   /* background-color: grey; */
    border-radius: 10px;
    text-align: center;
 }
