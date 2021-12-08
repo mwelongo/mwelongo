@@ -1,10 +1,11 @@
-/* Body Background */
+/* Body and Headings */
 body {
-   /* background: url("https://i.imgur.com/x8FtIjJ.jpg");
-   background-repeat: no-repeat;
-   background-size: 80%;
-   width: 100%;
-   height: 100%; */
+   font-family: Arial, sans-serif;
+   background-color: #e8e8e4;
+}
+
+h1, h2 {
+   text-align: center;
 }
 
 /* Header and Footer */
@@ -54,7 +55,7 @@ footer img {
 a {
    text-decoration: none;
 }
-li {
+header li, footer li {
    list-style-type: none;
    display: inline;
    padding-left: 3px;
@@ -67,7 +68,7 @@ h1 {
    height: 150px; */
 }
 
-/* Main Body - Box Containers */
+/* INDEX PAGE */
 .large-box {
    overflow: hidden;
    background-color: lightgrey;
@@ -113,13 +114,12 @@ h1 {
    text-align: justify;
 }
 .tech-icons img {
-   width: 50%;
+   width: 60%;
    border-radius: 0;
 }
 .tech-icons h5 {
    /* font-size: 14px; */
 }
-
 .right-box {
    overflow: hidden;
    position: absolute;
@@ -133,9 +133,9 @@ h1 {
    margin-left: 5%;
 }
 
-/* Project  */
+/* PROJECT PAGE*/
 .project-wrap {
-   width: 60%;
+   width: 50%;
    margin: auto;
    display: flex;
    margin-bottom: 1em;
@@ -146,8 +146,105 @@ h1 {
    width: 50%;
    padding: 10px;
 }
-
-.project-img img {
+.project-img img, .impact-wrap img {
    width: 95%;
    height: 100%;
+}
+.indented-text {
+   /* text-indent: 12px; */
+   margin-left: 20px;
+}
+
+/* Bio Page */
+.about-me-wrap {
+   width: 50%;
+   margin: auto;
+   display: block;
+   margin-bottom: 1em;
+   padding: .2em;
+   border: 1.5px solid lightgrey;
+   border-radius: 10px;
+}
+.about-me-text {
+   background-color: grey;
+   border-radius: 10px;
+   text-align: justify;
+   padding: 1.2em;
+}
+.about-me-wrap img {
+   width: 98%;
+   margin: 1.2em 0 1.2em 0
+   /* height: 100%; */
+}
+.project-btn {
+   display: block;
+   width: 60%;
+   height: 12%;
+   margin: 5px;
+   padding: .2em;
+   flex-direction: row;
+   align-items: center;
+}
+.project-content img {
+   width: 12%;
+}
+
+/* RESUME PAGE  */
+.resume-header {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   width: 50%;
+   margin: auto;
+   text-align: center;
+   border: 2px solid red;
+}
+.resume-header button {
+   height: 20px;
+}
+
+.experience-wrap, .education-wrap {
+   width: 50%;
+   margin: auto;
+   display: block;
+   margin-bottom: 1em;
+   padding: .2em;
+   border: 1.5px solid lightgrey;
+   border-radius: 10px;
+}
+
+/* SOCIAL IMPACT PAGE */
+.impact-wrap {
+   width: 60%;
+   height: 400px;
+   margin: auto;
+   display: flex;
+   margin-bottom: 1em;
+   padding: 5px;
+   background-color: grey;
+   border-radius: 10px;
+   text-align: center;
+}
+#rai-logo {
+   width: 60%;
+   height: auto;
+   margin: auto;
+}
+#okapi-logo {
+   width: 40%;
+   height: auto;
+   margin: auto;
+}
+.impact-text {
+   width: 40%;
+   border: 1px solid red;
+}
+.impact-img {
+   width: 60%;
+   margin: 5px;
+   /* height: 100%; */
+   border: 1px solid red;
+}
+.impact-img img {
+
 }
