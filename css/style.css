@@ -1,12 +1,14 @@
 /* Body and Headings */
-body {
-   font-family: Arial, sans-serif;
-   margin: 0;
-   margin-bottom: 100px;
-}
 
 h1, h2 {
    text-align: center;
+}
+
+/* Main Container */
+.main-container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
 }
 
 /* Header and Footer */
@@ -24,7 +26,9 @@ header img {
    margin: 5px;
 }
 .logo-wrap h3 {
-   color: red;
+   display: flex;
+   align-items: center;
+   color: #219EBC;
    padding: 5px;
 }
 .logo-wrap {
@@ -54,25 +58,44 @@ header li {
 button:hover,
 input[type="submit"]:hover
 {
-   background-color: grey;
-   border-color: #888;
+   background-color: #8ecae6;
+   border: transparent;
    outline: 0;
 }
-footer, .footer {
+footer,
+.footer {
    position: fixed;
    left: 0;
    bottom: 0;
    width: 100%;
    height: 80px;
-   background-color: lightgrey;
-   display: flex;
+   background-color: #FFB703;
    border: none;
-   border-radius: 5px;
 }
-footer img, .footer img {
-   width: 12%;
-   padding: 5px;
-   /* float: left; */
+.footer-wrap {
+   display: flex;
+   align-items: center;
+   text-align: center;
+   width: 25%;
+   margin: auto;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border: 1px dotted grey;
+}
+.footer-wrap img {
+   width: 100%;
+   border: 1px dotted grey;
+}
+footer a {
+   width: 15%;
+   height: 98%;
+   margin: .2em;
+   border: 1px dotted red;
+}
+.footer-wrap h6 {
+   padding: .2em;
+   margin: .2em;
+   border: 1px dotted red;
 }
 a {
    text-decoration: none;
@@ -82,14 +105,14 @@ header li, footer li {
    display: inline;
    padding-left: 3px;
 }
-h1 {
-   color: darkblue;
+h1, h2 {
+   color: #023047;
 }
 
 /* INDEX PAGE */
 .large-box {
    overflow: hidden;
-   background-color: lightgrey;
+   background-color: #8ecae6;
    position: absolute;
    left: 0px;
    top: 12%;
@@ -100,25 +123,32 @@ h1 {
 }
 .small-box {
    overflow: hidden;
-   background-color: grey;
+   background-color: #219EBC;
    position: absolute;
    left: 20%;
-   top: 20%;
+   top: 18%;
    z-index: -1;
    text-align: center;
    background-repeat: no-repeat;
    border-radius: 10px;
    width: 30%;
    height: 600px;
-   box-shadow: 10px -10px 10px lightgrey;
+   box-shadow: 5px 5px 10px #8ecae6;
 }
 .web-links {
    width: 100%;
    height: 12%;
    background-color: white;
 }
+.web-links a {
+   width: 25%;
+   margin: auto;
+}
 .web-links img {
    width: 10%;
+   height: auto;
+   margin-top: .5em;
+   margin-bottom: .5em;
 }
 .left-content img {
    display: block;
