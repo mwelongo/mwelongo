@@ -57,7 +57,8 @@ header li {
 }
 .button:hover,
 button:hover,
-input[type="submit"]:hover
+input[type="submit"]:hover,
+.small-box-btn:hover
 {
    background-color: #8ecae6;
    border: transparent;
@@ -134,8 +135,7 @@ header li, footer li {
 }
 .small-box-btn {
    border-radius: 5px;
-   padding: .2em;
-   margin: .5em;
+   padding: .5em;
    text-transform: uppercase;
 }
 .web-links {
@@ -159,42 +159,33 @@ header li, footer li {
    margin-right: auto;
    width: 45%;
    border-radius: 50%;
-   padding: 5px;
+   padding: 10px;
 }
 .left-content h5,
-.tech-icons
+.skillset-wrap
  {
-    margin: 0;
+    padding: 10px;
 }
-.tech-icons span,
+.skillset-wrap span,
 #skillset {
    color: #023047;
 }
-.tech-icons img {
-   width: 98%;
-   border-radius: 0;
-}
 .right-box {
    text-align: left;
-   /* border-radius: 5px; */
    left: 50%;
    top: 16%;
    width: 25%;
-   height: 600px;
+   height: 480px;
    overflow: hidden;
    position: absolute;
-   /* z-index: -1; */
-   padding: 2em;
+   padding: 5em 2em 5em 2em;
    margin-left: 5%;
    overflow-y: scroll;
+   text-align: center;
 }
 .right-box img {
    width: 98%;
    margin: auto;
-}
-.right-box h1,
-#welcome {
-   text-align: center;
 }
 .project,
 .experience-wrap,
