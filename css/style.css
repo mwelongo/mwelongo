@@ -122,14 +122,21 @@ header li, footer li {
    color: #023047;
    position: absolute;
    left: 20%;
-   top: 18%;
+   top: 16%;
    z-index: -1;
    text-align: center;
    background-repeat: no-repeat;
    border-radius: 10px;
    width: 30%;
    height: 600px;
+   padding-bottom: 2em;
    box-shadow: 5px 5px 10px #8ecae6;
+}
+.small-box-btn {
+   border-radius: 5px;
+   padding: .2em;
+   margin: .5em;
+   text-transform: uppercase;
 }
 .web-links {
    width: 100%;
@@ -169,17 +176,21 @@ header li, footer li {
 }
 .right-box {
    text-align: left;
-   border-radius: 10px;
+   /* border-radius: 5px; */
    left: 50%;
-   top: 12%;
-   width: 35%;
-   height: 700px;
+   top: 16%;
+   width: 25%;
+   height: 600px;
    overflow: hidden;
    position: absolute;
-   z-index: -1;
-   padding: 1.2em;
+   /* z-index: -1; */
+   padding: 2em;
    margin-left: 5%;
    overflow-y: scroll;
+}
+.right-box img {
+   width: 98%;
+   margin: auto;
 }
 .right-box h1,
 #welcome {
@@ -252,22 +263,27 @@ header li, footer li {
 
 /* BIO/ABOUT ME PAGE */
 .about-me-wrap {
-   width: 60%;
-   height: 450px;
+   display: block;
+   width: 45%;
+   height: 500px;
    margin: auto;
-   display: flex;
    margin-bottom: 1em;
+   padding: 2em;
    border-radius: 10px;
+   /* text-align: left; */
+}
+.about-me-text h5 {
    text-align: center;
 }
 .about-me-text {
    border-radius: 10px;
-   text-align: center;
+   text-align: justify;
    padding: 1.2em;
    font-weight: lighter;
 }
+
 .about-me-wrap img {
-   width: 50%;
+   width: 75%;
    margin: auto;
    display: block;
 }
