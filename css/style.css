@@ -2,6 +2,7 @@
 
 h1, h2 {
    text-align: center;
+   color: #023047;
 }
 
 /* Main Container */
@@ -78,35 +79,29 @@ footer,
    text-align: center;
    width: 25%;
    margin: auto;
-   margin-top: 10px;
-   margin-bottom: 10px;
-   border: 1px dotted grey;
+   margin-top: .2em;
+   margin-bottom: .2em;
 }
 .footer-wrap img {
    width: 100%;
-   border: 1px dotted grey;
+   height: auto;
 }
-footer a {
+.footer-wrap a {
    width: 15%;
-   height: 98%;
-   margin: .2em;
-   border: 1px dotted red;
+   height: 90%;
+   margin: .5em;
 }
 .footer-wrap h6 {
    padding: .2em;
    margin: .2em;
-   border: 1px dotted red;
 }
-a {
+/* a {
    text-decoration: none;
-}
+} */
 header li, footer li {
    list-style-type: none;
    display: inline;
    padding-left: 3px;
-}
-h1, h2 {
-   color: #023047;
 }
 
 /* INDEX PAGE */
@@ -124,6 +119,7 @@ h1, h2 {
 .small-box {
    overflow: hidden;
    background-color: #219EBC;
+   color: #023047;
    position: absolute;
    left: 20%;
    top: 18%;
@@ -163,11 +159,12 @@ h1, h2 {
  {
     margin: 0;
 }
-.tech-icons span {
-   color: red;
+.tech-icons span,
+#skillset {
+   color: #023047;
 }
 .tech-icons img {
-   width: 60%;
+   width: 98%;
    border-radius: 0;
 }
 .right-box {
@@ -184,52 +181,73 @@ h1, h2 {
    margin-left: 5%;
    overflow-y: scroll;
 }
-.project-wrap,
+.right-box h1,
+#welcome {
+   text-align: center;
+}
+.project,
 .experience-wrap,
 .education-wrap,
 .impact-wrap,
 .about-me-wrap,
 .right-box  {
-   box-shadow: 10px 10px 10px lightgrey;
+   box-shadow: 5px 5px 10px lightgrey;
 }
 
 /* PROJECTS PAGE*/
 .project-wrap {
-   width: 50%;
-   height: 35%;
-   margin: auto;
    display: flex;
-   margin-bottom: 1em;
-   border-radius: 10px;
-}
-.project-content,
-.project-img {
-   width: 50%;
-   padding: 10px;
-}
-.project-img img {
-   width: 98%;
-   height: auto;
-   padding: .2em;
-}
-.project-img {
-   /* border: 1px solid red; */
-}
-.project-btn {
-   display: block;
-   width: 60%;
-   height: 12%;
-   margin: 5px;
-   padding: .2em;
    flex-direction: row;
+   flex-wrap: wrap;
+   width: 90%;
+   /* margin: 0 auto; */
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+}
+.project {
+   width: 22%;
+   height: 320px;
+   margin: 1em;
+   border-radius: 10px;
+   /* border: 2px solid blue; */
+}
+.project-links {
+   width: 100%;
+   height: 15%;
+   background-color: #219EBC;
+   border-radius: 10px;
+   margin-bottom: .5em;
+}
+.project-links-centered {
+   display: flex;
    align-items: center;
+   padding: 5px;
+   width: 50%;
+   margin: auto;
+
 }
-.project-content img {
-   width: 12%;
+.visit-page-btn {
+   width: 2em;
+   text-align: center;
+   letter-spacing: .2rem;
+   text-transform: uppercase;
+   text-decoration: none;
+   white-space: nowrap;
+   background-color: transparent;
+   border-radius: 4px;
+   border: 1px solid #bbb;
+   cursor: pointer;
+   box-sizing: border-box;
 }
-.indented-text {
-   /* text-indent: 12px; */
-   margin-left: 20px;
+.project-links-centered a {
+   /* width: 30%;
+   height: 50%;
+   margin: .5em; */
+}
+.project-links-centered img {
+   width: 25%;
+   /* height: 98%; */
 }
 
 /* BIO/ABOUT ME PAGE */
